@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of 2 no's</title>
+    <style>
+        div{
+            text-align: center;
+            align-items: center;
+            background-color: aquamarine;
+            display: flex;
+            margin: auto;
+            padding: 10%;
+        }
+        input,p,button{
+            text-align: center;
+            padding: 10px;
+            color: brown;
+            margin: 10px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    
+    Enter the First number : <input id="first">
+    Enter the Second number: <input id="second">
+    <button onclick="add()">Add</button>
+    <input id="answer">
+    
+    <script>   
+        function add(){
+            var a,b,c;
+            a=Number(document.getElementById("first").value);
+            b=Number(document.getElementById("second").value);
+            c= a + b;
+            document.getElementById("answer").value= c;
+        }
+    </script>
+    
+    
+</body>
+</html>
