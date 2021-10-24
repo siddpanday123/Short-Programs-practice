@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Positive and negative value check</h2>
+    <input type="number" name="" id="value">
+    <button onclick="cv()">Click here to check</button>
+    <h3 id="check" style="border: 1px solid black;"> ... This is a ..... value.</h3>
+    
+    
+    
+    <script>
+        
+        function cv(){
+            let value = document.getElementById("value").value;
+            
+            if(value < 0){
+                document.getElementById("check").innerText = `  ${value} :- This is a Negative value`;
+            }else if(value > 0){
+                document.getElementById("check").innerText = `  ${value} :- This is a Positive value`;
+            }else if(value == 0){
+                document.getElementById("check").innerText =  `  ${value} plz fill a value`; 
+            } 
+                
+        }
+    </script>   
+</body>
+</html>
